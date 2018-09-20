@@ -7,23 +7,29 @@
 /* --- Navbar Makeup --- */
 
 .navbar {
-    min-height: 58px;
+    min-height: 60px;
 }
 
-.navbar-brand img {
-    max-height: 400%;
+.navbar-default .navbar-brand {
+    /*color: #000000;*/
+    font-size: 2em;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.brand-hlogo {
+    font-size: 1.5em;
 }
 
 .navbar-default {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
+    color: #000000;
     border: None;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #000000;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    line-height: 25px;
+    vertical-align: middle;
     font-family: 'Hind', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -34,6 +40,16 @@
     color: #d03232;
     transition: all 0.5s ease-in-out;
     /*background-color: transparent;*/
+}
+
+.navbar-default .navbar-brand {
+    color: #000000;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #000000;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-collapse,
@@ -63,11 +79,13 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
 .logo-row {
-    background-color: rgba(255, 255, 255, 0.5);
-    
+    background-color: rgba(255, 255, 255, 0.4);
+
 }
 
 .centered-logo {
@@ -76,309 +94,55 @@
     max-height: 50%;
     display: block;
     margin: 10px auto 12px;
-    animation: fade-in 3s ease-out;
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+/* --- End Background and Logo ---*/
+
+/* --- About --- */
 
 
-
-.name {
-    animation: showup 7s;
-}
-
-.title {
-    animation: reveal 7s;
-}
-
-.title span {
-    animation: slidein 7s;
-}
-
-/*------------------------------------------------------------------ end css for title image*/
-
-/*------------------------------------------------------------------ css for about area*/
-
-.content-area {
-    background-image: url('./assets/images/wall-texture.jpeg');
-    background-size: cover;
-}
-
-.content {
+.about-container {
+    top: 5vh;
+    height: 85vh;
     margin-top: 80px;
-    margin-bottom: 80px;
-
-}
-
-.info-segment {
-    margin-top: 50px;
-}
-
-.info-icon {
-    font-size: 30px;
-}
-
-.content-heading {
-    font-family: 'Catamaran', sans-serif;
-}
-
-.content-section {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 20px;
-}
-
-.skill-list {
-    list-style: none;
-}
-
-.skill-list li:first-child {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.profile-img {
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-.info-segment a * {
-    color: #000000;
-}
-
-.info-segment a:hover * {
-    text-decoration: underline;
-}
-
-/*------------------------------------------------------------------end css for about area*/
-
-/*------------------------------------------------------------------css for portfolio area*/
-
-.photo2 {
-    background-image: url('./assets/images/computer-camera.jpeg');
-}
-
-.portfolio-title {
-    top: 15vh !important;
-    margin-bottom: 10px;
-}
-
-.portfolio-heading {
-    margin-top: 40px;
-    font-family: 'Finger Paint', cursive;
-    font-weight: bold;
     margin-bottom: 40px;
-}
-
-.polaroid {
     width: 100%;
-    padding: 10px 10px 10px 10px;
-    background: #fafafa;
-    box-shadow: inset 0 0 10px #000000;
+    overflow-x: hidden;
 }
 
-.p1 {
-    -ms-transform: rotate(20deg);
-    /* IE 9 */
-    -webkit-transform: rotate(20deg);
-    /* Safari */
-    transform: rotate(-20deg);
-}
-
-.p2 {
-    -ms-transform: rotate(13deg);
-    /* IE 9 */
-    -webkit-transform: rotate(13deg);
-    /* Safari */
-    transform: rotate(13deg);
-}
-
-.p3 {
-    -ms-transform: rotate(-5deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-5deg);
-    /* Safari */
-    transform: rotate(-5deg);
-}
-
-
-.portfolio-thumb {
-    width: 100%;
-    height: 100%;
-    -webkit-filter: grayscale(100%) brightness(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) brightness(0%);
-    transition: all 0.5s ease-in-out;
-}
-
-.portfolio-thumb:hover {
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-}
-
-.polaroid-writing {
-    margin-top: 10px;
-}
-
-.project-info {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 60px;
-    background-image: linear-gradient(to right, #ffffff, #D3D3D3);
-    padding: 5px;
-}
-
-.project-info p {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 15px;
-}
-
-/*------------------------------------------------------------------end css for portfolio area*/
-
-/*------------------------------------------------------------------css for contact area*/
-
-.large-text {
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.email-form-area {
-    width: 100%;
-    border: 1px solid #8e8e8e;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-textarea {
-    resize: none;
-}
-
-.social-link {}
-
-.social-media-area {
-    margin-top: 40px;
-}
-
-.social-link {
+.name-header {
     text-align: center;
-    font-size: 25px;
-    width: 60px;
-    height: 60px;
-    background: black;
-    margin: 0 auto;
-    line-height: 60px;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    filter: opacity(60%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.social-media-area a {
-    color: #ffffff;
+.profile-pic {
+    margin-top: 25px;
 }
 
-.social-link:hover {
-    filter: opacity(100%);
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+.profile-pic img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.social-media-area a:hover,
-.social-media-area a:visited {
-    color: #ffffff !important;
+.about-container {
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+
 }
 
-
-/*------------------------------------------------------------------end css for contact area*/
-
-@keyframes showup {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
+.story-time h2 {
+    font-family: 'Hind Guntur', sans-serif;
+    font-weight: 600;
 }
 
-@keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
-    20% {
-        margin-left: -800px;
-    }
-    35% {
-        margin-left: 0px;
-    }
-    100% {
-        margin-left: 0px;
-    }
+/*Portfolio Page*/
+
+.portfolio-container {
+    max-width: 100%;
 }
 
-@keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
-    20% {
-        opacity: 1;
-        width: 0px;
-    }
-    30% {
-        width: auto
-    }
-    80% {
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .title-animation {
-        font-size: 12px;
-    }
-    .parallax {
-        background-attachment: scroll
-    }
-    .info-icon {
-        margin-bottom: 10px;
-    }
-    .profile-img {
-        margin-top: 20px;
-    }
-    .polaroid {
-        padding: 5px 5px 5px 5px;
-        width: 110%;
-    }
-    .polaroid-writing {
-        font-size: 10px;
-        margin-bottom: 0;
-        margin-top: 5px;
-    }
-    .portfolio-thumb {
-        filter: None;
-    }
-    .project-info {
-        display: none;
-    }
-    .portfolio-heading {
-        margin-top: 20px;
-    }
-    .portfolio-title {
-        top: 30vh!important;
-    }
-    .p2 {
-        margin-top: 20vh;
-    }
+.portfolio-container img {
+    max-width: 100%;
 }
