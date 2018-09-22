@@ -42,19 +42,53 @@
         </div>
     </nav>
 
-    <!--Background and Logo-->
+    <!--Background Slideshow-->
 
-    <div id="home" class="bg-fixed">
-        <div class="row logo-row">
-            <div class="col-xs-12">
-                <div class="centered-logo">&nbsp;</div>
+    <!--<div id="home" class="bg-home">-->
+    <!--<div class="row logo-row">-->
+    <!--    <div class="col-xs-12">-->
+    <!--        <a href="/portfolio.html">-->
+    <!--            <div class="centered-logo">&nbsp;</div>-->
+    <!--        </a>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="home" class="home-row">
+        <div id="homecarousel" class="carousel slide fill carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div id="first" class="fill"></div>
+                </div>
+
+                <div class="item">
+                    <div id="second" class="fill"></div>
+                </div>
+                
+                <div class="item">
+                    <div id="third" class="fill"></div>
+                </div>
+                
+                <div class="item">
+                    <div id="fourth" class="fill"></div>
+                </div>
+                
+                <div class="item">
+                    <div id="fifth" class="fill"></div>
+                </div>
+                
+                <div class="item">
+                    <div id="sixth" class="fill"></div>
+                </div>
             </div>
         </div>
     </div>
 
+
     <!--About-->
 
-    <div class="about-container container-fluid" id="about">
+
+    <div id="about" class="about-container container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <div class="row">
@@ -62,12 +96,13 @@
                         <h3 class="name-header">
                             Ashwin Vijayaraghavan
                         </h3>
+                        <h6 class="quote"><em>"Be a Dragonfly in a world full of flies" - Anonymous</em></h6>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="profile-pic">
-                            <img class="img-thumbnail" src="/assets/images/ash.jpg"></img>
+                            <img class="img-thumbnail" src="/assets/images/ace/ash.jpg"></img>
                         </div>
                     </div>
                 </div>
@@ -75,46 +110,95 @@
             <div class="col-xs-12 col-sm-12 col-md-8">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 story-time">
-                        <h2>
-                            How true Passion turned into a Profession
+                        <h2 class="red-head">
+                            How true Passion became a Profession
                         </h2>
                         <p>Despite an innate talent in accounting, Ashwin’s true love never was numbers, it was pictures. It’s difficult to say which came first, the fascination for creepy-crawlies or the obsession with photographing them. After 6 years
-                            of wriggling through bushes, tracking some scary looking creepy-crawlies, Ashwin finally realised that insects are notoriously unreliable pay masters, and has over the last few years, begrudgingly, diversified into various
-                            other fields.
+                            of wriggling through bushes, tracking some scary looking creepy-crawlies, Ashwin finally realised that insects are notoriously unreliable pay masters, and has over the last few years, begrudgingly at first, diversified into
+                            various other fields.
                         </p>
                         <p>Ashwin, during this transition process, completed a higher national diploma in photography in order to get as good at taking pictures of other things as he is at taking pictures of insects (they're not bugs).</p>
-                        <p>Now he also takes pictures at events (where they feed him veg biriyani), pictures of cool things that people want to sell, and pictures of small and big people who want to look nice in pictures. Thankfully he realised that he has
-                            quite a flair for it.</p>
+                        <p>Now he takes pictures at events (where they feed him veg biriyani), pictures of cool things that people aim to sell, and pictures of people, small to large, who want to look nice in pictures. As it turns out, he has quite a flair
+                            for it.</p>
                         <p>You can contact Ashwin for commercial product photography, coverage at events and personalised portraits using the various social links, or send an enquiry his way using the form in the contact section.</p>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Portfolio is moved to it's separate page -->
+    <!--End About-->
 
-        <div class="contact-container container-fluid" id="contact">
+    <!-- Portfolio is moved to portfolio.html to better cater the portfolio -->
+
+    <!--Contact-->
+
+    <div class="contact-container container-fluid" id="contact">
+        <div class="row">
             <div class="row">
-
+                <h2 class="red-head">
+                    Contact
+                </h2>
             </div>
+            <div class="social-links col-xs-12 col-sm-12">
+                <p>Ashwin can be found and contacted on these social sites</p>
+                <ul class="list-inline">
+                    <li>
+                        <a class="hvr-grow" target="_blank" href="https://www.facebook.com/ace.photo1gra.ph.y/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="hvr-grow" target="_blank" href="https://www.instagram.com/ace._photography/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="hvr-grow" target="_blank" href="https://www.behance.net/ashwinv10900c"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="online-form col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <div class="social-links">
+                    <p>Alternatively, you can use this form</p>
+                </div>
+                <form class="form-outline">
+                    <div class="form-group">
+                        <label class="font-makeup" for="InputEmail">Email Address *</label>
+                        <input type="email" class="dropshadow form-control" id="InputEmail" placeholder="jane.doe@someplace.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-makeup" for="InputSubject">Subject *</label>
+                        <input type="text" class="dropshadow form-control" id="InputSubject" placeholder="Can you..." required/>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-makeup" for="InputMessage">Message *</label>
+                        <textarea class="dropshadow form-control" rows="5" id="InputMessage" placeholder="Hi Ashwin" required></textarea>
+                    </div>
 
+                    <button type="submit" class="button-red btn btn-success center-block">Submit</button>
+                </form>
+            </div>
         </div>
+    </div>
+
+    <!--End Contact-->
 
 
 
 
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script>
-            $('.navbar-collapse .nav a').on('click', function() {
-                if ($('.navbar-collapse').hasClass('in')) {
-                    $(".navbar-collapse").collapse('hide');
-                }
-            });
-        </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $('.navbar-collapse .nav a').on('click', function() {
+            if ($('.navbar-collapse').hasClass('in')) {
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
+    </script>
+    <script>
+        $("#homecarousel").carousel({
+            interval: 3500,
+            pause: 'none'
+        });
+    </script>
 </body>
 
 </html>
