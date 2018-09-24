@@ -1,0 +1,151 @@
+/* --- Fonts --- */
+
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,600|Hind:300,400,600');
+
+body {
+    background-color: #000000;
+}
+
+/* --- End Fonts --- */
+
+/* --- Navbar Makeup --- */
+
+.bigger-button {
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    float: left;
+    /*height: 50px;*/
+    padding: 5px 10px 15px;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.navbar-default {
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    color: #000000;
+    border: None;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000000;
+    vertical-align: middle;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #000000;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: 0;
+    text-align: center;
+}
+
+#home-fa,
+#about-fa,
+#gallery-fa,
+#contact-fa {
+    font-size: 2em;
+}
+
+
+/* --- End Navbar Makeup --- */
+
+/* --- Gallery  ---*/
+
+.gallery-container {
+    top: 63px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.gallery-container img {
+    width: 100%;
+    margin: 0;
+}
+
+.gallery-page .item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-avoid {
+    height: 50px;
+}
+
+.carousel-inner>.item {
+    height: 90vh;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-caption {
+    position: fixed;
+    left: 15%;
+    right: 15%;
+    top: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/* --- End Gallery ---*/
