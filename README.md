@@ -50,6 +50,8 @@ The site can be viewed [HERE](https://arjanvdmeij.github.io/msp-1-acephotography
   - Used for various hover effects
 - [FontAwesome](https://fontawesome.com/) version 5.2.1
   - Used for the navigation bar icons and the social link icons
+- [Stack Overflow](https://stackoverflow.com/)
+  - Answers for carousel background as well as menu auto-close on mobile devices
 
 ## Testing
 - Testing was entirely done in monkey-testing style
