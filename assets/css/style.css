@@ -188,7 +188,6 @@ textarea {
     border: 2px solid #000000;
     font-family: 'Hind', sans-serif;
     font-weight: 600;
-    /*box-shadow: 2px 2px 4px #861f1f;*/
 }
 
 .button-white:hover,
@@ -234,7 +233,9 @@ textarea {
      font-weight: 600;
 }
 
-/*Slideshow Background*/
+/* --- Slideshow Background --- */
+
+/* --- Background carousel courtesy of: https://codepen.io/raptorkraine/pen/MEgjwe --- */
 
 .home-brand {
     background-color: rgba(255, 255, 255, .5);
@@ -258,7 +259,7 @@ textarea {
 }
 
 #homecarousel {
-    background-color: #000;
+    background-color: #000000;
     position: fixed;
     z-index: -1;
 }
@@ -329,7 +330,7 @@ textarea {
 }
 
 
-/* Media query adjustments */
+/* --- Media query adjustments --- */
 
 @media all and (transform-3d),
 (-webkit-transform-3d) {
@@ -354,6 +355,6 @@ textarea {
     }
 }
 
-/*End Media Query adjustments */
+/* --- End Media Query adjustments --- */
 
-/*End Slideshow Background*/
+/* --- End Slideshow Background --- */
