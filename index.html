@@ -93,7 +93,6 @@
     <div id="about" class="about-container container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <!--<div class="col-md-12">-->
                 <div class="profile-align">
                     <h3>
                         Ashwin Vijayaraghavan
@@ -103,10 +102,8 @@
                         <img class="img-thumbnail" src="./assets/images/ace/ash.jpg"></img>
                     </div>
                 </div>
-                <!--</div>-->
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8">
-                <!--<div class="row">-->
                 <div class="col-md-10 col-md-offset-1">
                     <h3>
                         How a man's passion became his profession
@@ -123,7 +120,6 @@
                     </p>
                     </p>
                 </div>
-                <!--</div>-->
             </div>
         </div>
     </div>
@@ -134,13 +130,10 @@
 
     <div id="contact" class="contact-container container-fluid">
         <div class="row">
-            <!--<div class="row">-->
             <h2 class="header-sort">
                 Contact
             </h2>
-            <!--</div>-->
             <div class="social-links">
-                <!--<p>See more work by Ashwin</p>-->
                 <ul class="list-inline">
                     <li>
                         <a class="hvr-grow" target="_blank" href="https://www.facebook.com/ace.photo1gra.ph.y/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -178,15 +171,15 @@
                     <p>Contact Ashwin with this form</p>
                     <div class="form-group">
                         <label class="font-makeup" for="InputEmail">Email Address *</label>
-                        <input type="email" class="dropshadow form-control" id="InputEmail" placeholder="jane.doe@someplace.com" required/>
+                        <input type="email" class="dropshadow form-control" id="InputEmail" placeholder="jane.doe@someplace.com (required)" required/>
                     </div>
                     <div class="form-group">
                         <label class="font-makeup" for="InputSubject">Subject *</label>
-                        <input type="text" class="dropshadow form-control" id="InputSubject" placeholder="Can you..." required/>
+                        <input type="text" class="dropshadow form-control" id="InputSubject" placeholder="Enter a subjec (required)" required/>
                     </div>
                     <div class="form-group">
                         <label class="font-makeup" for="InputMessage">Message *</label>
-                        <textarea class="dropshadow form-control" rows="5" id="InputMessage" placeholder="Hi Ashwin..." required></textarea>
+                        <textarea class="dropshadow form-control" rows="5" id="InputMessage" placeholder="Enter a message (required)" required></textarea>
                     </div>
                     <button type="submit" class="button-white btn btn-success center-block">Submit</button>
                 </form>
@@ -208,7 +201,9 @@
                 $(".navbar-collapse").collapse('hide');
             }
         });
-
+        
+        // Setting interval for background carousel
+        
         $("#homecarousel").carousel({
             interval: 6000,
             pause: 'none'
