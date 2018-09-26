@@ -1,9 +1,13 @@
 /* --- Fonts --- */
 
-@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,600|Hind:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
 
 body {
     background-color: #000000;
+}
+
+.font-plus {
+    font-size: 1.4em;
 }
 
 /* --- End Fonts --- */
@@ -37,9 +41,9 @@ body {
 .navbar-default .navbar-nav>li>a {
     color: #000000;
     vertical-align: middle;
-    font-family: 'Hind', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    /*font-size: 1.2em;*/
     padding-top: 20px;
 }
 
@@ -58,7 +62,7 @@ body {
 #about-fa,
 #gallery-fa,
 #contact-fa {
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 
@@ -108,19 +112,34 @@ body {
 }
 
 .carousel-caption {
-    position: fixed;
-    left: 15%;
-    right: 15%;
-    top: 20px;
+    /*position: fixed;*/
+    /*left: 15%;*/
+    /*right: 15%;*/
+    /*top: 40px;*/
+    /*z-index: 10;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*color: #f7f7f7;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-weight: 300;*/
+    /*font-size: 2em;*/
+    /*text-align: center;*/
+    /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);*/
+    /*background: rgba(0,0,0,0.4);*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #ffffff;
-    font-family: 'Hind', sans-serif;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    color: #f7f7f7;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 3px 3px #000;
+    /* background: rgba(0,0,0,0.4); */
 }
 
 .carousel-fade .carousel-inner .item {
@@ -146,6 +165,12 @@ body {
 
 .carousel-fade .carousel-control {
     z-index: 2;
+}
+
+.carousel-control {
+    opacity: 0.8;
+    color: #f7f7f7;
+    font-size: 25px;
 }
 
 /* --- End Gallery ---*/
