@@ -31,11 +31,12 @@ The site can be viewed [HERE](https://arjanvdmeij.github.io/msp-1-acephotography
   - Direct links to phone, whatsapp, and several social sites
 - Navigation bar, providing links to sections and photo gallery
 - Separate gallery page to focus on the photos
+  - Currently limited to 12 photos, see below
 
 
 ### Features Left to Implement
 - Updates to gallery presentation (category based) to cater more pictures per category
-- 
+- (Eventually) providing an admin page to upload images and provide context
 
 ## Tech Used
 
@@ -64,7 +65,7 @@ The site can be viewed [HERE](https://arjanvdmeij.github.io/msp-1-acephotography
   - By Ashwin himself
 
 ### Media
-- All photos used in this site are all courtesy of Ashwin Vijayaraghavan, owner of ACE Photography
+- All photos used in this site are courtesy of Ashwin Vijayaraghavan, owner of ACE Photography
 
 ### Information
 - No external sources were used for any information in the site. 'About' text was provided by Ashwin.
